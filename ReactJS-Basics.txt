@@ -1,0 +1,257 @@
+1. Introduction to ReactJS
+
+- React is the UI Library.
+- React given by Facebook.
+- React categorized into two subjects.
+
+1. ReactJS
+2. React Native
+
+- ReactJS, used to create the web applications.
+- React Native used to develop the mobile applications.
+- we will develop ReactJS Applications by using JSX.
+- JSX stands for JavaScript and XML.
+- Babel is the tool, used convert the XML to JavaScript.
+- Babel tool is the inbuilt tool of react library.
+- React follows the following principles.
+
+  1. Simplifies the Complex UI
+  2. Virtual DOM
+
+  - because above principles react applications are faster applications.
+  - React applications are Component Based Applications.
+
+  - These Components are Reusable.
+
+  - "Material-UI" is the library released by Facebook, used to increase the look and feel of react applications.
+  - we can implement session management (services implementation) by using "saga" , "thunk" and "redux".
+  - "saga" , "thunk" and "redux" are the 3rd party libraries.
+
+2. Installation of Software's: NodeJS, Yarn Tool, Create-react-app tool
+
+3. Components in ReactJS
+
+   Reusable portion of Complex UI Called as Component.
+
+   As a React Developer, we can reuse Components.
+
+   we can call React Applications are Component Based Applications.
+
+4. Types of Components
+
+we have two types of Components.
+
+    1) Stateless Components (Functional Components)
+
+    2) Stateful Components (Class Level Components)
+
+A functional component is just a plain JavaScript function which accepts props as an argument and returns a React element.
+
+A class component requires you to extend from React.Component and create a render function which returns a React element.
+
+5. Asynchronous Calls (Consuming Rest API'S)
+   => axios
+
+   GET
+   POST
+   PUT
+   DELETE
+   HEAD
+
+   ***
+
+   ***
+
+   ***
+
+Asynchronous Calls
+
+==================
+
+    - "axios" is the 3rd module, used to make the Asynchronous calls in react applications.
+
+
+
+    - we will download axios module by using "yarn" tool.
+
+
+
+    > cd axios-ex
+
+
+
+    > yarn add axios --save
+
+6. DataBases Integrations
+
+   => MongoDB
+
+   => MySQL
+
+   => SQLServer
+
+7. MERN Stack Development
+
+   M - MongoDB
+
+   E - ExpressJS
+
+   R - ReactJS
+
+   N - NodeJS
+
+MongoDB
+
+---
+
+    - MongoDB database is the "NoSQL" database.
+
+    - MongoDB Supports only "JSON".
+
+    - As a MongoDB Developer, we can perform "CRUD" Operations on JSON.
+
+    - MongoDB database follows the "mongodb" protocol.
+
+    - by default MongoDB database will run on port no. 27017
+
+    - mongodb database follows the "client server" architecture
+
+Express.js
+
+Fast, unopinionated, minimalist web framework for Node.js
+
+provides a robust set of features for web and mobile applications.
+
+node.js
+
+Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine 12.18.0
+
+compiles the JavaScript directly into the native machine code. lightweight framework used for creating server-side web applications
+
+and extends JavaScript API to offer usual server-side functionalities
+
+8. State Management in ReactJS
+
+   => Redux
+
+   => Thunk (Mini Project-1)
+
+   => Saga (Mini Project-2)
+
+   ***
+
+   => Context API
+
+Redux is a predictable state container for JavaScript apps.
+
+It helps you write applications that behave consistently, run in different environments (client, server, and native), and are easy to test. ... You can use Redux together with React, or with any other view library.
+
+Why redux? used to implement the "state management".
+
+What is redux thunx, redux saga? In order to manipulate the store Actions(request, response).
+
+Redux thunx is an outdated library.
+
+Saga is Advanced library.
+
+Why Saga? In sagas debouncing is available by default.
+
+React Context API is a way to essentially create global variables that can be passed around in a React app. This is the alternative to "prop drilling", or passing props from grandparent to parent to child, and so on. Context is often touted as a simpler, lighter solution to using Redux for state management.
+
+Context provides a way to pass data through the component tree without having to pass props down manually at every level.
+
+9. Life Cycle Hooks
+
+componentWillMount is executed before rendering, on both the server and the client side.
+
+componentDidMount is executed after the first render only on the client side. This is where AJAX requests and DOM or state updates should occur. This method is also used for integration with other JavaScript frameworks and any functions with delayed execution such as setTimeout or setInterval. We are using it to update the state so we can trigger the other lifecycle methods.
+
+componentWillReceiveProps is invoked as soon as the props are updated before another render is called. We triggered it from setNewNumber when we updated the state.
+
+shouldComponentUpdate should return true or false value. This will determine if the component will be updated or not. This is set to true by default. If you are sure that the component doesn't need to render after state or props are updated, you can return false value.
+
+componentWillUpdate is called just before rendering.
+
+componentDidUpdate is called just after rendering.
+
+componentWillUnmount is called after the component is unmounted from the dom. We are unmounting our component in main.js.
+
+10. Pure Components in ReactJS
+
+//whenever "property value in state" changes then only render() function will execute by Pure Component.
+
+//in normal components render function won't dependent(check) the value of "property in state"
+
+//create the Component
+
+//take the property(num) in state
+
+//change the num for every 1 sec (setInterval())
+
+//pass the num to another component (Temp)
+
+11. Higher Order Components in ReactJS
+
+//connect is the predefined component
+
+//connect component technically called as HOC
+
+//HOC Stands for higher order component
+
+//connect component helps to dispatch and subscribe the reducer
+
+import { connect } from "react-redux";
+
+12. Latest Hooks
+
+        useState
+
+
+
+        UseEffect
+
+useMemo
+
+What is a Hook? A Hook is a special function that lets you “hook into” React features. For example, useState is a Hook that lets you add React state to function components.
+
+What does calling useState do? It declares a “state variable”. This is a way to “preserve” some values between the function calls — useState is a new way to use the exact same capabilities that this.state provides in a class. Normally, variables “disappear” when the function exits but state variables are preserved by React.
+
+What does useEffect do? By using this Hook, you tell React that your component needs to do something after render. React will remember the function you passed (we’ll refer to it as our “effect”), and call it later after performing the DOM updates. In this effect, we set the document title, but we could also perform data fetching or call some other imperative API.
+
+What is useMemo do?
+
+Returns a memoized value.
+
+Pass a “create” function and an array of dependencies. useMemo will only recompute the memoized value when one of the dependencies has changed. This optimization helps to avoid expensive calculations on every render.
+
+13. JEST Unit Test Cases
+
+- in react, we will write unit test cases by using 3rd party libraries.
+
+  1. JEST
+
+  2. MOCHA
+
+- we will write unit test cases by using JEST. we will download JEST by using yarn
+
+  > yarn add @testing-library/react --save
+
+Jest is the tool, used to write the unit test cases to "react" and "vue" applications.
+
+we will install jest tool by using following command.
+
+yarn add react-test-renderer --save
+
+all the testing files have the ".test.js" extension.
+
+we will test unit test cases by using "yarn test" or "jest"
+
+14. Material UI
+
+- "Material-UI" is the library released by Facebook, used to increase the look and feel of react applications.
+
+  we can apply rich ui to Components by using "material-ui".
+
+  we will add material-ui by using "yarn" tool
+
+  > yarn add @material-ui/core @material-ui/icons --save

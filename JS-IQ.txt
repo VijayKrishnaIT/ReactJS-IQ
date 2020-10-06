@@ -1,0 +1,748 @@
+What is Prototype chaining?  
+
+Overriding the parent class functionality with child class functionality. 
+
+
+What is callbacks?   
+
+Passing "one function" to "another function" as an argument called as "CallBack" 
+
+ 
+
+What is CallBack Hell?  
+
+ Providing the tightly coupled code with call backs is called callback hell.  
+
+ 
+
+What is the problem of Callback hell?  
+
+Readability is less and difficult. Remedy for callback is promises. Callback hell is Not a recommended code. Call add, sub, multiplication, division. It is  not easy to understand. 
+
+ 
+
+What is Promise? 
+
+ Promises Establishes the communication between "producer" and "consumer". 
+
+Promises also called as "special JavaScript objects". 
+
+we will create Promises by using "Promise" class constructor. 
+
+Promises have 3 states 
+
+            1) success  (resolve) 
+
+            2) error (reject) 
+
+            3) pending 
+
+ we will consume promises by using "then()" 
+
+ 
+
+Difference b/w local storage and session storage? 
+           local storage 
+ 
+whenever we "close the browser" or "opens the new tab" we won't lost the data from local storage. 
+
+ 
+"local Storage" is the predefined object used to work with the local storage. 
+
+we will store the data in the form of a "key & value" pairs. 
+
+whenever we "close the browser" or "opens the new tab" we will lost the data from session storage. 
+
+ 
+
+"session Storage" is the predefined object used to work with the session storage. 
+
+ we will store the data in the form of a "key & value" pairs. 
+
+ 
+
+What is Closure?  
+
+Closure - if any inner function accessing the outer function data, then such scenario called as closure 
+
+ 
+
+What is this Keyword? 
+
+"this" refers to the current context and current object the code is written in. 
+
+******************************************************************************* 
+
+ 
+
+1) variables (var,let & const) 
+
+variables are used to store the data. 
+
+by using variables, we can store any type of data     Ex. string , number, boolean, arrays, objects,...... 
+
+we will declare variables by using "var", "let" and "const" keyword. 
+
+"let" and "const" keywords introduced in ES6 
+
+var 
+
+let 
+
+     1) ES1                                                            
+
+    2) duplicate variables allowed                                  
+
+    3) won't obey scope rule                                         
+
+    4) global polluting issue raised                                 
+
+    5) variable hoisting raised                                      
+
+    6) var keyword is the global scope                            
+
+1) ES6 
+
+2) duplicate variables not allowed 
+
+3) obeys scope rule 
+
+4) we can overcome global polluting issue 
+
+5) we can overcome variable hoisting 
+
+6) let keyword is the block scoped member 
+
+    
+
+ 
+
+ //const keyword 
+
+//const keyword used to declare the variables 
+
+//const keyword introduced in "ES6" 
+
+//in const keyword "reinitialization" not possible 
+
+ 
+
+2) Functions 
+
+    => Named Functions 
+
+    => Anonymous Functions / Arrow Functions 
+
+    => Default Parameters in Functions 
+
+    => Rest Parameters in Functions 
+
+    => Constructor Functions 
+
+    => Optional Parameters in Functions 
+
+    => Generator Functions 
+
+  
+
+ 1) Named Functions 
+
+        - The function with the particular name called as Named Functions. 
+
+    Syntax 
+
+    ------ 
+
+    //function declaration/definition 
+
+     
+
+    function function_name(arguments){ 
+
+        //business logic 
+
+    }; 
+
+  
+
+    //call the function 
+
+    function_name(parameters) 
+
+ 
+
+ 
+
+  2. Anonymous Functions / Arrow Functions / Fat Arrow Functions / CallBack Functions 
+
+  
+
+   - without name 
+
+   - ES6 
+
+   - ()=>{} 
+
+  
+
+    Syntax 
+
+    ------ 
+
+    //function definition 
+
+    var/let/const variablename = ()=>{ 
+
+        //business logic 
+
+    }; 
+
+  
+
+    //call the anonymous function 
+
+    variablename(parameters); 
+
+--> 
+
+  
+
+ <script> 
+
+    var fun_one = ()=>{ 
+
+        return "welcome to arrow functions";   
+
+    }; 
+
+  
+
+    console.log( fun_one ); 
+
+    console.log( fun_one() ); 
+
+</script>  
+
+  
+
+ 
+
+Default Parameters in Functions 
+
+  
+
+    - while defining the function we are initializing arguments with default values. 
+
+  
+
+    - this concept also introduced in ES6 
+
+ 
+
+function fun_one(arg1="ReactJS", 
+
+                 arg2="NodeJS", 
+
+                 arg3="MongoDB"){ 
+
+    console.log( arg1, arg2, arg3 ); 
+
+}; 
+
+fun_one();                          //ReactJS NodeJS MongoDB 
+
+ 
+
+ 
+
+ Rest Parameters in Functions 
+
+    ---------------------------- 
+
+        - it is used to store the more than one value in a single argument. 
+
+  
+
+        - we will represent rest parameter by using "..." 
+
+  
+
+        - "..." called as spread operator. 
+
+  
+
+        - spread operator introduced in ES6 
+
+  
+
+        - we can have "only one spread argument" per function 
+
+  
+
+        - position of spread operator should be in last. 
+
+ 
+
+function fun_one(...arg1){ 
+
+        console.log(arg1); 
+
+    }; 
+
+    fun_one("ReactJS");             //[ 'ReactJS' ] 
+
+    fun_one("ReactJS","NodeJS");    //[ 'ReactJS', 'NodeJS' ] 
+
+ 
+
+constructor functions 
+
+//collection of "variables" and "functions" called as class 
+
+//before ES6 version, we will create classes by using "constructor functions" 
+
+//in constructor functions all the members(variables and functions) will start with "this" keyword 
+
+//"this" keyword used to recognize the "current class" members 
+
+//we will create object to the constructor functions by using "new" keyword 
+
+  
+
+/* 
+
+    function class_one() { 
+
+        this.sub_one = "ReactJS";   
+
+        this.sub_two = "NodeJS"; 
+
+        this.sub_three = "MongoDB"; 
+
+    }; 
+
+    let obj = new class_one(); 
+
+    console.log(obj.sub_one, 
+
+                obj.sub_two, 
+
+                obj.sub_three);     //ReactJS NodeJS MongoDB 
+
+ 
+
+Optional Parameters 
+
+//Optional Parameters introduced in ES6 
+
+//while passing the parameters "few parameters are optional" 
+
+//we will represent optional parameters by using "?" 
+
+//Optional Parameters will work in TypeScript Environment 
+
+//we will install TypeScript by using following command 
+
+//  npm install -g typescript@latest 
+
+//npm stands for node packaging manager 
+
+//-g stands for global installation 
+
+//we will execute typescript by using following commad 
+
+// => tsc sample.ts(Transpilation)         => node sample.js 
+
+function fun_one(arg1, arg2, arg3) { 
+
+    console.log(arg1, arg2, arg3); 
+
+} 
+
+fun_one(); 
+
+//undefined undefined undefined 
+
+fun_one("Hello"); 
+
+//Hello undefined undefined 
+
+fun_one(undefined, "Hello"); 
+
+ 
+
+ 
+
+3) Prototype 
+
+    => Prototype Chaining :    getting the data from "parent constructor function" to "child constructor function" called as prototype chaining 
+
+ 
+
+=>Prototype overriding :overriding parent class functionality with child class functionality called as prototype over riding. 
+
+ 
+
+  
+
+4) JSON 
+
+    - JSON Stands for Java Script Object Notation. 
+
+    - JSON used to transfer the data over the Network. 
+
+    - JSON is light weight compared to XML. 
+
+    - parsing(Reading) of JSON Eazy compared to XML. 
+
+  
+
+Syntax 
+
+------ 
+
+    Objects --- {} 
+
+  
+
+    Arrays  --- [] 
+
+  
+
+    data    --- key & value pairs 
+
+  
+
+                key & value separated by using ":" 
+
+  
+
+                key & value pairs separated by using "," 
+
+ 
+
+5) Promises 
+
+  
+
+        - Promises Establishes the communication between "producer" and "consumer". 
+
+        - Promises also called as "special JavaScript objects". 
+
+        - we will create Promises by using "Promise" class constructor. 
+
+        - Promises have 3 states 
+
+            1) success  (resolve) 
+
+            2) error    (reject) 
+
+            3) pending 
+
+        - we will consume promises by using "then()" 
+
+ 
+
+ 
+
+6) AJAX Calls 
+
+Asynchronous calls --> all request entered at same time. Req1, req2,….. 
+
+  
+
+7) CallBacks in JavaScript 
+
+What is callbacks?  - Passing "one function" to "another function" as an argument called as "CallBack" 
+
+ 
+
+What is CallBack Hell?  Providing the tightly coupled code with call backs is called callback hell.  
+
+ 
+
+What is the problem of Callback hell? Readability is less and difficult. Remedy for callback is promises. 
+
+Callback hell is Not a recommended code. Call add, sub, multiplication, division. It is  not easy to understand. 
+
+ 
+
+  
+
+8) Closures in JavaScript 
+
+           - if any inner function holding the outer function data, then such scenario called as closure. 
+
+  
+
+<script> 
+
+    function fun_one(){ 
+
+        var x = 10; 
+
+        var y = 20; 
+
+        return ()=>{ 
+
+            console.log(x); 
+
+            console.log(y); 
+
+        } 
+
+    }; 
+
+    console.dir( fun_one() );  //0: Closure (fun_one) {x: 10, y: 20} 
+
+   
+
+</script> 
+
+ 
+
+9) IIFE (Immediate Invokable Functional Expressions) 
+
+    - Immediate Invokable Functional Expressions. 
+
+        - ES9 
+
+        - whenever we create the IIFE, immediately it will be invoked. 
+
+        - IIFE also called as self-invokable functions. 
+
+        Syntax 
+
+        ------ 
+
+        ((parameter)=>{ 
+
+            //business logic 
+
+        })(arguments); 
+
+ 
+
+(()=>{ 
+
+    console.log("welcome to IIFE"); 
+
+})();     //welcome to IIFE 
+
+ 
+
+  
+
+10) Data Structures 
+
+    =>Map 
+
+    =>WeakMap 
+
+    =>Set 
+
+    =>WeakSet 
+
+  
+
+WHY data structure – in order to overcome the overriding problem in JSON. 
+
+How many DS ? Map(), Weakmap(), set(), Weakset() 
+
+ 
+
+ Map allows duplicate values ,map won't allow duplicate keys  
+
+ 
+
+WeakMap allows only "json object" as keys 
+
+ 
+
+Set won't allow duplicate values  
+
+ 
+
+WeakSet support JSON Data. 
+
+ 
+
+11) Event Bubbling & Event Capturing 
+
+The Events are propagating from down to top is called Event Bubbling. 
+
+Propagation of Events from top to bottom is called Event Capturing. 
+
+  
+
+12) async & await keywords 
+
+async & await 
+
+//async & await are the keywords 
+
+//above keywords used to "consume the Promises" 
+
+//because of callbacks code readability decreased, so in ES9 they introduced "async & await" keywords 
+
+To consume the promise we call async and await instead of then(). Latest released in ES9. 
+
+  
+
+13) Regular Expressions (pattern for password validation) 
+
+  
+
+14) Generators & Iterators 
+
+Generator Functions 
+
+//it is used to control the flow of execution inside the function. 
+
+//this concept introduced in "ES9" 
+
+//Generator Functions should prefix with "*" 
+
+//Generator Functions creates "cursor" mechanism to execute the application logic 
+
+ 
+
+   Iterators means loops. 
+
+    --------- 
+
+    for()  - for(initialization; condition; increment) for (let I=0 ; I<5; I++)  -- Outdated loop, legacy loop 
+
+    forEach() advanced loop 
+
+    for....of() 
+
+    for....in() if we want to iterate JSON objects at that time we need to go for..in loop. Es6 loop for...in loop 
+
+ 
+
+  
+
+15) Arrays Manipulations 
+
+length:    it is used to know the length of array 
+
+Delete: it is used to delete the particular element in array. Memory will not be released. 
+
+map() - it is used to manipulate the each and every array element 
+
+Filter() it is used to create the new array based on condition 
+
+reduce():   - it is used to know the summation of array elements. 
+
+reduceRight():  it is used to know the summation from right to left 
+
+Push() it is used to "add" the element at the end of array 
+
+Pop() it is used to "remove" the element at end of array 
+
+Shift() it is used to "remove" the element from beginning of array 
+
+Unshift():   it is used to "add" the element at beginning of array 
+
+findIndex() it is used to find the index of particular element. 
+
+Splice()  it is used to add or remove the elements from array. 
+
+Slice() - The slice() method returns the selected elements in an array, as a new array object.  Extract particular element in array. 
+
+find() it is used to check the element existence 
+
+includes() - it gives true or false for the element. 
+
+some() if element satisfies then it is true else false. 
+
+every() if all the elements satisfies then true. 
+
+fill() fill() - replace every element with 100. ES9 latest function. Mutability concept. 
+
+sort() The sort() method sorts the items of an array. The sort order can be either alphabetic or numeric, and either ascending (up) or descending (down). //num1-num2, //num2-num1 
+
+IndexOf() - won't return indexes to repeated elements. 
+
+flat() - to get single level array from multi-level array, ES9 function available 
+
+//Infinity property - more than 1 inner array then we need to go for Infinity 
+
+  
+
+flatMap() The flatMap() method first maps each element using a mapping function, then flattens the result into a new array. It is identical to a map() followed by a flat() of depth 1, but flatMap() is often quite useful, as merging both into one method is slightly more efficient. 
+
+copyWithIn()     - it is used to shift the indexes 
+
+reverse() The reverse() method reverses the order of the elements in an array. 
+
+Array.form() The Array.from() method returns an Array object from any object with a length property or an iterable object. 
+
+join() The join() method returns the array as a string. The elements will be separated by a specified separator. The default separator is comma (,). 
+
+repeat() The repeat() method returns a new string with a specified number of copies of the string it was called on. 
+
+LastIndexOf() The lastIndexOf() method returns the position of the last occurrence of a specified value in a string. 
+
+toString() The toString() method converts a number to a string. 
+
+replace() The replace() method searches a string for a specified value, or a regular expression, and returns a new string where the specified values are replaced. 
+
+trim() The trim() method removes whitespace from both sides of a string. 
+
+trimStart() The trimStart() method removes whitespace from the beginning of a string. trimLeft() is an alias of this method. 
+
+trimEnd() The trimEnd() method removes whitespace from the end of a string. trimRight() is an alias of this method. 
+
+padStart() The padStart() method pads the current string with another string (multiple times, if needed) until the resulting string reaches the given length. The padding is applied from the start of the current string. 
+
+PadEnd() The padEnd() method pads the current string with a given string (repeated, if needed) so that the resulting string reaches a given length. The padding is applied from the end of the current string. 
+
+split()-The split() method is used to split a string into an array of substrings, and returns the new array. 
+
+substr()- The substr() method extracts parts of a string, beginning at the character at the specified position, and returns the specified number of characters. 
+
+  
+
+substring() -The substring() method extracts the characters from a string, between two specified indices, and returns the new sub string. 
+
+  
+
+forEach() - The forEach() method calls a function once for each element in an array, in order. 
+
+  
+
+for...of()  loops through the values of an iterable object 
+
+  
+
+for...in() - we can iterate the loop remove the duplicates 
+
+ 
+
+ 
+
+16) call(), apply(), bind() 
+
+  
+
+Call() -- if we want to create second memory location will interact with 1st memory location. 
+
+  
+
+Apply() – if we want to pass array instead of independent parameter 
+
+  
+
+Bind() - merge memory location 1 and memory location 2 -->merge 2 memory locations-->new memory location. 
+
+  
+
+What is the USE? Call function advanced function APPLY, call and apply advanced version is bind(). 
+
+Purpose is same. Call, bind, apply –used to access 2 objects in different memory location 
+
+ 
+
+ 
