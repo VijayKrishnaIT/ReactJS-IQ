@@ -1,0 +1,478 @@
+Angular IQ
+
+1.  What is CSS Float Property?
+    The float property specifies how an element should float.
+
+2.  What is CSS Position?
+    The position property specifies the type of positioning method used for an element (static, relative, fixed, absolute or sticky).
+
+3.  What is HTML5 Semantic Web?
+    A semantic element clearly describes its meaning to both the browser and the developer.
+    Examples of non-semantic elements: <div> and <span> - Tells nothing about its content.
+    Examples of semantic elements: <form>, <table>, and <article> - Clearly defines its content.
+
+4.  Difference b/w local storage and session storage
+    Session storage is temporary which exists as long as the current window is opened and data gets lost when window
+    is closed where as Local Storage is persistant and remains intact across sessions unless anyone deletes it
+
+5.  What is Javascript function?
+    Functions are one of the fundamental building blocks in JavaScript.
+    Particular business logic called as function.
+
+6.  What is the scope of the variable?
+    Scope determines the accessibility (visibility) of variables.
+    In JavaScript there are two types of scope:
+
+    Local scope
+    Global scope
+    JavaScript has function scope: Each function creates a new scope.
+
+    Variables defined inside a function are not accessible (visible) from outside the function.
+
+7.  What is Callback, closure?
+    Passing "one function" to "another function" as an argument called as "CallBack"
+    if any inner function accessing the outer function data, then such scenario called as closure.
+
+8.  explain crud operations in angular? fetch, insert, update, delete
+
+9.  why we use bootstrap? explain some bootstrap class?
+    Bootstrap is a framework to help you design websites faster and easier.
+    It includes HTML and CSS based design templates for typography, forms, buttons, tables, navigation,
+    modals, image carousels, etc. It also gives you support for JavaScript plugins.
+
+10. explain directives
+    To enhance view capabilities or view features we go for directives.
+    Types of Directives – 2 types
+    Predefined Directives --- Directives given by the Angular framework
+    Custom Directives --- Directives developed by users
+
+11. explain routing? Navigating from 1 component to another component is called routing.
+
+12. Events in HTMl?
+    HTML has the ability to let events trigger actions in a browser, like starting a JavaScript when a user clicks on an element.
+
+13. differnce between display:block and visibility hidden?
+    display:none will hide the element and collapse the space is was taking up,
+    whereas visibility:hidden will hide the element and preserve the elements space.
+
+14. difference between var, let, const keyword?
+    var let
+
+        1) ES1                                       1) ES6
+        2) duplicate variables allowed               2) duplicate variables not allowed
+        3) won't obey scope rule                     3) obeys scope rule
+        4) global polluting issue raised      4) we can overcome global polluting issue
+        5) variable hoisting raised               5) we can overcome variable hoisting
+        6) var keyword is the global scope  6) let keyword is the block scoped member
+           member
+
+    const keyword
+    const keyword used to declare the variables
+    const keyword introduced in "ES6"
+    In const keyword "reinitialization" not possible
+
+15. types of Binding in angular?
+    There are four different types of ways through which we can do data bindings in Angular 2 namely
+    event binding,
+    unidirectional binding (i.e. one-way binding),
+    bi-directional binding (i.e. two-way binding),
+    and the interpolation.
+
+16. Lifecycle hooks in Angular?
+
+    ngOnChanges: Called every time a data-bound input property changes.
+    It’s called a first time before the ngOnInit hook. The hook receives a SimpleChanges object that contains the previous and current values for the data-bound inputs properties. This hook gets called often, so it’s a good idea to limit the amount of processing it does.
+
+    ngOnInit: Called once upon initialization of the component.
+
+    ngDoCheck: Use this hook instead of ngOnChanges for changes that Angular doesn’t detect. It gets called at every change detection cycle, so keeping what it does to a minimum is important for performance.
+
+    ngAfterContentInit: Called after content is projected in the component.
+
+    ngAfterContentChecked: Called after the projected content is checked.
+
+    ngAfterViewInit: Called after a component’s view or child view is initialized.
+
+    ngAfterViewChecked: Called after a component’s view or child view is checked.
+
+    ngOnDestroy: Called once when the component is destroyed and a good hook to use to cleanup and unsubscribe from observables.
+
+17. differnce between promise and observable?
+
+    Promises Establishes the communication between "producer" and "consumer". - Promises also called as "special javascript objects". - we will create Promises by using "Promise" class constructor. - Promises have 3 states 1) success (resolve) 2) error (reject) 3) pending - we will consume promises by using "then()"
+
+    a Promise is always asynchronous,
+    while an Observable can be either synchronous or asynchronous,
+    a Promise can provide a single value,
+    whereas an Observable is a stream of values (from 0 to multiple values),
+    you can apply RxJS operators to an Observable to get a new tailored stream
+
+18. Angular service
+
+    Service is a broad category encompassing any value, function, or feature that an app needs. A service is typically a class with a narrow, well-defined purpose. It should do something specific and do it well. Angular distinguishes components from services to increase modularity and reusability.
+
+19. Difference between angular and react
+
+20. Node.js single threaded
+
+    Node.js is a single-threaded but highly scalable system that utilizes JavaScript as its scripting language. It uses asynchronous, event-driven I/O instead of separate processes or threads. It can achieve high output via single-threaded event loop and non-blocking I/O.
+
+21. Advantages of React JS over Angular application?
+
+22. What are different kinds of bindings in angular?
+
+    In Angular, data binding is one of the most powerful and important features that allow you to define the communication between the component and DOM(Document Object Model). It basically simplifies the process of defining interactive applications without having to worry about pushing and pulling data between your view or template and component. In Angular, there are four forms of data binding:
+    a. String Interpolation
+    b. Property Binding
+    c. Event Binding
+    d. Two-Way Data Binding
+
+23. What is the promise and observable?
+
+24. What is | ?
+
+25. What is arrow function ?
+
+26. What is element position Static, relative, fixed, absolute?
+
+    The position property specifies the type of positioning method used for an element
+    (static, relative, fixed, absolute or sticky).
+
+    position: static; HTML elements are positioned static by default. Static positioned elements are not affected by the top, bottom, left, and right properties.
+
+    position: relative; An element with position: relative; is positioned relative to its normal position.
+
+    position: fixed; An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled.
+
+    position: absolute;An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).
+
+27. What is border and margin?
+
+    Margin: Clears an area outside the border. The margin is transparent.
+
+    Border: A border that goes around the padding and content
+
+    Content - The content of the box, where text and images appear
+
+    Padding - Clears an area around the content. The padding is transparent
+
+28. Did you work on Angular/Cli?
+
+    The Angular CLI is a command-line interface tool that you use to
+    initialize, develop, scaffold, and maintain Angular applications directly from a command shell.
+
+29. Difference b/w angular and react?
+    Angular is a complete framework while React is a JavaScript Library.
+    Angular uses a two-directional data flow process where it updates the
+    Real DOM directly while React updates only the Virtual DOM and is concerned with the one-directional data flow.
+
+30. Angular Lifecycle Hooks?
+
+    constructor
+    ngOnChanges
+    ngOnInit
+    ngdoCheck
+    ngAfterContentInit
+    ngAfterContentChecked
+    ngAfterViewInit
+    ngAfterViewChecked
+    ngDoCheck
+    ngAfterContentChecked
+    ngAfterViewChecked
+    //change detected
+    ngDoCheck
+    ngAfterContentChecked
+    ngAfterViewChecked
+
+31. HTML5 API
+    The HTML Geolocation API is used to locate a user's position.
+
+32. Latest tags in HTML5
+
+    <article>	    Represents an independent piece of content of a document,      such as a blog entry or newspaper article
+    <aside >	    Represents a piece of content that is only slightly related to the  rest of the page.
+    <audio>		    Defines an audio file.
+    <canvas>	    This is used for rendering dynamic bitmap graphics on the fly, such as graphs or games.
+    <command>	   Represents a command the user can invoke.
+    <datalist>	   Together with the a new list attribute for input can be used to make comboboxes
+    <details>	    Represents additional information or controls which the user can obtain on demand
+    <embed>		    Defines external interactive content or plugin.
+    <figure>	    Represents a piece of self-contained flow content, typically referenced as a single unit from the main flow of the document.
+    <footer>	    Represents a footer for a section and can contain information about the author, copyright information, et cetera.
+    <header>	    Represents a group of introductory or navigational aids.
+    <hgroup>	    Represents the header of a section.
+    <keygen>	    Represents control for key pair generation.
+    <mark>	        Represents a run of text in one document marked or highlighted for reference purposes, due to its relevance in another context.
+    <meter>	        Represents a measurement, such as disk usage.
+    <nav>	        Represents a section of the document intended for navigation.
+    <output>	    Represents some type of output, such as from a calculation done through scripting.
+    <progress>	    Represents a completion of a task, such as downloading or when performing a series of expensive operations.
+    <ruby>	        Together with <rt> and <rp> allow for marking up ruby annotations.
+    <section>	    Represents a generic document or application section
+    <time>	        Represents a date and/or time.
+    <video>	        Defines a video file.
+    <wbr>	        Represents a line break opportunity.
+
+33. Application cache?
+    An application cache provides the following benefits: Offline browsing: users can navigate a site or use a web application although they are offline. Speed: cached resources are local, and therefore load faster.
+    Reduced server load: the browser only downloads resources that have changed from the server.
+
+34. How Angular Cli work?
+    In Angular, a folder that contains projects (that is, apps and libraries).
+    The CLI ng new command creates a workspace to contain projects.
+    Commands that create or operate on apps and libraries (such as add and generate ) must be executed from
+    within a workspace folder.
+
+35. Why Typescript?
+    TypeScript simplifies JavaScript code, making it easier to read and debug. ...
+    TypeScript provides highly productive development tools for JavaScript IDEs and practices, like static checking.
+    TypeScript makes code easier to read and understand. With TypeScript, we can make a huge improvement over plain JavaScript.
+
+36. Local Storage and Session Storage? Why?
+    Both localStorage and sessionStorage offer advantages compared to using cookies:
+    The data is saved locally only and can't be read by the server, which eliminates the security issue that cookies present.
+    It allows for much more data to be saved (10Mb for most browsers).
+
+    localStorage and sessionStorage allow to save key/value pairs in the browser. ...
+    Unlike cookies, web storage objects are not sent to server with each request.
+    Because of that, we can store much more. Most browsers allow at least 2 megabytes of data (or more)
+    and have settings to configure that.
+
+37. HTML5 New element?
+
+38. Dynamic type Vs static type in Angular2?
+    Static typing requires that all variables and function return values be typed and TypeScript is an examples of
+    statically typed languages. This “sumOfTwoNumbers()” function takes two numeric (or int)
+    values as arguments and returns a number. Dynamically typing does not require explicit type declaration.
+
+39. What is web worker?
+    Web Workers are a simple means for web content to run scripts in background threads.
+
+40. Why Angular 1 shifted 2 why we updated versions.
+    Angular 2 is not an upgrade of Angular 1 but it is completely rewritten.
+    Angular 2 uses TypeScript which is a superset of JavaScript (It doesn't mean only TypeScript but dart also).
+    Angular 1. x was not built with mobile support in mind, where Angular 2 is mobile-oriented.
+
+41. How to ajax call : AJAX = Asynchronous JavaScript And XML
+    <html>
+        <head>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        </head>
+        <body>
+            <script>
+                $.ajax({
+                    url  : "https://api.covid19api.com/summary",
+                    method : "GET",
+                    success : (posRes)=>{
+                        console.log(posRes);
+                    },
+                    error : (errRes)=>{
+                        console.log(errRes);
+                    } 
+                });
+            </script>
+        </body>
+    </html>
+
+42. Angular ajax call? get and post
+
+    Customers.service.ts-->GET
+
+    import { Injectable } from '@angular/core';
+    import { HttpClient } from "@angular/common/http";
+    import { Observable } from 'rxjs';
+    @Injectable({
+    providedIn: 'root'
+    })
+    export class CustomersService {
+    constructor(public http:HttpClient) { }
+    public getCustomers():Observable<any>{
+    return this.http.get("https://www.w3schools.com/angular/customers.php");
+    };
+    }
+
+    Uppercase.service.ts-->POST
+
+    import { Injectable } from "@angular/core";
+    import { HttpClient } from "@angular/common/http";
+    import { Observable } from "rxjs";
+    @Injectable({
+    providedIn : "root"
+    })
+    export class uppercaseService{
+    constructor(public http:HttpClient){}
+    public convertToUpperCase(data):Observable<any>{
+    return this.http.post("http://test-routes.herokuapp.com/test/uppercase",data);
+    };
+    };
+
+43. Box Model? css
+
+44. Ajax get request?
+
+45. Ajax post request with body
+
+46. Angular http requests get post
+
+47. Dynamictyping and statictyping? Static typing in Angular 2.
+
+48. why arrow functions?
+    Arrow functions acts like "callbacks" to receive the response from server.
+    The function without name called as "Anonymous Functions".
+    from ES6 onwards, we can call "Arrow Functions".
+    we will represent Arrow Functions by using "=>"
+    Arrow functions are "secured" compared to named functions.
+
+49. why javascript don't need int and char?
+
+50. When element is underlined how to remove underline: text-decoration: none
+
+51. why do you prefer Angular over react?
+
+52. What is Inline styling, external Styling?
+    There are three ways of inserting a style sheet:
+
+    External CSS: With an external style sheet, you can change the look of an entire website by changing just one file!
+    Internal CSS: An internal style sheet may be used if one single HTML page has a unique style.
+    Inline CSS: An inline style may be used to apply a unique style for a single element.
+
+53. dynamic and typescripting
+
+54. static typing
+
+55. Explain about your current project?
+
+56. What is service flux?
+
+57. How to create Components in Angular?
+
+    Simple Typescript class called as Component.
+    As angular developer, we can create more than one component.
+    As Angular Developer, we can provide the communication between one component to another component.
+    Because of components, code reusability is high in angular.
+
+58. What is advantage of switching from Angular to react?
+
+59. Why Services?
+
+    Services are used to share the common business logic to multiple components.
+    we have two types of services.
+
+60. predefined services: services provided by angular framework called as predefined services.
+
+61. custom services: services developed by us based on application requirement called as custom services.
+
+62. What is Angular routing? how to validate the link?
+    Navigating from 1 component to another component is called routing.
+
+63. What is AOT compiler?
+
+64. What are the Angular lifecycle hooks.
+
+65. How do you perform routing in Angular application.
+
+66. what is lazy loading in Angular.
+
+67. What is EventEmitter?
+
+68. what is selector?
+
+69. How do you create services and components using cli?
+
+70. What is Observable , Observable vs promise?
+
+71. What is subscribe, why do you need it?
+
+72. What's new in Angular 8?
+
+73. What is dependency injection in Angular?
+
+74. Few questions on forms, on submit with login form, angular integration with springboot application.
+
+75. ngOnInit vs constructor
+
+76. How do you deploy your angular project in test/prod environments.
+
+77. Features of angular
+
+78. Angular versions and updates in each version
+
+79. Es6/es7/es8/es9 features
+
+80. Angular life cycle hooks
+
+81. Parent and Child component interactions.--> 3 ways
+
+    View Child Decorator
+
+    Output Decorator
+
+    Event Emitter
+
+    Input Decorator
+
+82. Tell me about your current project? What tools are you using?
+
+83. Can you write code to build a form that takes input and display message on click of submit button?
+
+84. Can you write code to create separate component for input field?
+
+85. Can you write code to create Form component separately and display the output?
+
+86. Can you write code to show the Message in separate file?
+
+87. Can you explain me the folder structure for the Angular App?
+
+88. Why Observable?
+
+89. What is Closure? Why we need closure?
+
+90. Why we need arrow functions?
+
+91. What is callback?
+
+92. What are the best practices followed in the company?
+
+93. What is pagination? Why we need to go for it?
+
+94. If we build a search engine using react can you explain how the search works?
+
+95. How do you add the filtering in Search?
+
+96. What API are need to show the Search results?
+
+97. Can we implement the redux without state or reducer?
+
+98. Which IDE did you use? Can you install and run sample code?
+
+99. Can you open the documentation for the react-context app and explain the flow?
+
+100.  Can you open material-ui documentation and tell me which elements you have worked on?
+
+101.  What is IntelliJ? Why we need it?
+
+102.  Tell me about yourself?
+
+103.  Which technology are you comfortable with Angular or React?
+
+104.  What is difference between object.freeze and Const?
+
+105.  What is Callback?
+
+106.  What is Prototype Chaining?
+
+107.  What css styling tool did you use?
+
+108.  What is observerable. Please explain in briefly?
+
+109.  Communications between input and output.
+
+110.  What is component, directive?
+
+111.  please explain whether Angular and React both technologies are which platforms?
+
+112.  async and await what are this please explain briefly and both are asynchronous or synchronous?
+
+113.  how do you call your restAPI's in your Angular component?
+
+114.  In Angular 7 what are the new features compare to previous angular versions Please explain breifly?
